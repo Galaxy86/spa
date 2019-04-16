@@ -1,17 +1,16 @@
 $(function(){
-    var $pwd = $('input[type="password"]');
-      var $span = $('span img');
-
-      $span.mouseover(function(){
-            $span.attr('src','images/pwdulook.png');
-                $pwd.attr('type','text');
+    var $img=$('img');
+      var $inp=$('input');
+      $img.mouseover(()=>{
+            $inp.attr("type","text");
+                $img.attr("src","close.png");
                   
       });
-
-      $span.mouseout(function(){
-            $span.attr('src','images/pwdlook.png');
-                $pwd.attr('type','password');
+      $img.mouseout(()=>{
+            $inp.attr('type',"password");
+                $img.attr('src',"open.png");
                   
-      });
+      })
+        console.log('hello world');
 
 });
